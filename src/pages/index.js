@@ -3,20 +3,17 @@ import { Link } from "gatsby"
 
 export default () => (
   <section>
-    <h1>Hello world!</h1>
+    <h1>Hello Meetups!</h1>
     <p>
-      Open the DevTools Network tab and watch what happens when you mouse over a
-      link.
+      Having these links hard-coded doesn't make much sense. We should move this
+      file to the templates folder and have gatsby-node populate the links.
     </p>
     <ul>
       <li>
-        <Link to="page-2">Page 2</Link>
+        <Link to="meetups/wordpress-orlando">WordPress-Orlando</Link>
       </li>
       <li>
-        <Link to="page-3">Page 3</Link>
-      </li>
-      <li>
-        <Link to="page-4">Page 4</Link>
+        <Link to="meetups/onetug">ONETUG</Link>
       </li>
     </ul>
   </section>
