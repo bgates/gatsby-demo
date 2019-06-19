@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 export default ({ pageContext: { meetup } }) => (
   <section>
@@ -6,3 +7,12 @@ export default ({ pageContext: { meetup } }) => (
     <p>{meetup.group}</p>
   </section>
 )
+
+export const meetupQuery = graphql`
+  query($title: String!) {
+    meetupsJson(title: { eq: $title }) {
+      title
+      group
+    }
+  }
+`
