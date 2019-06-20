@@ -6,7 +6,8 @@
     "date": "6-25-2019",
     "start": "6:30PM",
     "end": "8:30PM",
-    "location": "3203 Lawton Rd #200 · Orlando, FL"
+    "location": "3203 Lawton Rd #200 · Orlando, FL",
+    "image": "website-construction"
   },
   {
     "group": "ONETUG",
@@ -15,6 +16,7 @@
     "date": "6-25-2019",
     "start": "7:00PM",
     "end": "9:00PM",
-    "location": "101 S Garland Ave #300 · Orlando, FL"
+    "location": "101 S Garland Ave #300 · Orlando, FL",
+    "image": "asp-net-banner"
   }
 ]
