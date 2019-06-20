@@ -16,9 +16,9 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     }
   `)
   data.allMeetupsJson.nodes.forEach(node => {
-    const { title } = node
+    const { group, title } = node
     createPage({
-      path: `/meetups/${title.toLowerCase()}`,
+      path: `/meetups/${group.toLowerCase()}`,
       component: require.resolve("./src/templates/meetup"),
       context: { title },
     })
